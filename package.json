@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test:endToend": "playwright test"
+    "regression": "npx playwright test --project chromium",
+    "webTests": "npx playwright test --grep @Web",
+    "ApiTests": "npx playwright test --grep @Smoke"
   },
   "keywords": [],
   "author": "",
