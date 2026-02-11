@@ -29,7 +29,7 @@ pipeline {
         }
     }
 
-    post {
+    post{
         always {
             // This saves your report so you can see why tests failed
             archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
