@@ -14,5 +14,5 @@ test('login with valid credential', async ({ page }) => {
     await page.getByRole('button', { name: 'Login' }).click();
 
     await page.waitForTimeout(3000);
+});
 
-})

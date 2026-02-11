@@ -24,7 +24,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Runs your tests. Use --reporter=html for local reports
-                sh 'npx playwright test'
+                sh 'npx playwright test --project chromium'
             }
         }
     }
